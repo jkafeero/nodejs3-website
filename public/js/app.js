@@ -23,10 +23,10 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 messageOne.textContent = data.location
                 messageTwo.textContent = data.forecast.summary + ' The temperature is '  
-                    + data.forecast.temperature +
-                    'C with propability a '+ data.forecast.precipProbability + '% chance of precipitation ' + 
-                    + ' a high of ' +data.forecast.dayHigh + 'C and a low of ' + data.forecast.dayLow
-                    + 'C'
+                    + data.forecast.temperature 
+                    + 'C with propability a '+ data.forecast.precipProbability 
+                    + '% chance of precipitation, a high of ' + data.forecast.dayHigh 
+                    + 'C and a low of ' + data.forecast.dayLow + 'C'
                 // messageTwo.textContent = {
                 //     location: data.location,
                 //     forecast: data.forecast
