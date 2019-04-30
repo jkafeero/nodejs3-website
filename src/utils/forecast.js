@@ -24,7 +24,7 @@ const forecast = (longitude, latitude, callback) => {
         if(error) {
             callback('Unable to connect to weather services', undefined)
         } else  if (body.error){
-            callback('Unable to get weather. Try another search',  undefined)
+            callback('Unable to get weather. Try another search ',  undefined)
         } else {
             callback(undefined, {
                 summary: body.daily.data[0].summary,
