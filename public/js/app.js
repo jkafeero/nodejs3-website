@@ -25,6 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
                 messageTwo.textContent = data.forecast.summary + ' temperature is '  
                     + data.forecast.temperature +
                     ' propability of precipitation is ' + data.forecast.precipProbability
+                    + 'with a high of ' +data.forecast.dayHigh + ' and a low of ' + data.forecast.dayLow
                
                 // messageTwo.textContent = {
                 //     location: data.location,
